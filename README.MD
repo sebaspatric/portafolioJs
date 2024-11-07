@@ -62,5 +62,12 @@ Este repositorio contiene una colección de proyectos desarrollados en distintas
 - **Enlaces**:
   - [Código](https://github.com/sebaspatric/Sprint6/blob/main/Notebooks/Sprint6.ipynb)
 
+### 10. Deep Learning con Keras
+- **Descripción**: Entrenamiento de un modelo de red neuronal para clasificar imágenes de productos de moda utilizando el conjunto de datos Fashion-MNIST. El modelo predice la categoría de cada artículo en un set de entrenamiento y prueba.
+- **Tecnologías**: Python, Keras, TensorFlow
+- **Enlaces**:
+  - [Código](https://github.com/sebaspatric/Sprint6/blob/main/Notebooks/Sprint6.ipynb)
+  - [Fashion-MNIST Dataset](https://github.com/zalandoresearch/fashion-mnist)
+  
 ## Autor
 **Sebastián Menares** - Desarrollador apasionado por la programación y la ciencia de datos. Puedes encontrar más de mis proyectos en [GitHub](https://github.com/sebaspatric).
