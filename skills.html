@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Habilidades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid p-3">
+        <div class="d-flex justify-content-between align-items-center container-fluid">
+          <a href="index.html" class="navbar-brand">
+            <div class="image-container" id="logo">
+              <img src="assets/img/logo1.jpg" alt="logo" />
+            </div>
+          </a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="margin-left: 15px;"  
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <!-- Formulario de búsqueda que se posiciona debajo al reducir la pantalla -->
+        <form class="form-inline mt-3 mt-lg-0 search-form">
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        
+      </header>
+  
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Sobre Mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="skills.html">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- Contenido principal -->
+<section id="skills" class="container py-5">
+    <h2 class="text-center mb-4">Habilidades</h2>
+    <div class="row ">
+        <!-- Tarjeta para Análisis de Datos -->
+        <div class="col-md-4 mb-3">
+            <div class="card ">
+                <div class="card-body">
+                    <h5 class="card-title">Análisis de Datos</h5>
+                    <p class="card-text">Experiencia en la manipulación y visualización de datos utilizando:</p>
+                    <ul>
+                        <li>Power BI</li>
+                        <li>Excel</li>
+                        <li>Python (Pandas, Matplotlib)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta para Desarrollo Web -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollo Web</h5>
+                    <p class="card-text">Desarrollo de aplicaciones web utilizando:</p>
+                    <ul>
+                        <li>Java</li>
+                        <p class="card-text">Construcción de aplicaciones web y servicios RESTful utilizando Spring Boot y Spring MVC.</p>
+                        
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Tarjeta para Bases de Datos -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Bases de Datos</h5>
+                    <p class="card-text">Experiencia en gestión y administración de bases de datos:</p>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta para Bash -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Shell Scripting</h5>
+                    <p class="card-text">Conocimientos en scripting y automatización de tareas con Bash.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Footer -->
+ <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 Sebastián Menares. Todos los derechos reservados.</p>
+      <p>Ubicación: Santiago, Chile</p>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

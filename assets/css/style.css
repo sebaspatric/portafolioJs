@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+ /* Estilos para el loader 
+ 
+  #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    color: #0077b0;
+}
+    */
+
+/* Oculta el contenido de la página mientras el loader está activo 
+.hidden-content {
+    visibility: hidden;
+}*/
+
+
+/* Estilos generales */
+
+.image-container{
+    display: flex;
+    align-items: center;
+}
+.image-container img{
+    width: 100%;
+}
+
+/******************************************************************************
+ Estilos del header*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1f1f1f;
+    padding: 10px 20px;
+}
+
+#logo{
+    width: 50px;
+}
+
+#logo img{
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+
+
+.form-inline{
+    display: flex;
+    align-items: center;
+}
+.form-inline input {
+    margin-right: 10px;
+
+}
+
+/***************************************************************************
+barra navegacion formulario busqueda*/
+.search-form {
+    text-align: right;
+  }
+
+
+/* Alineación del formulario de búsqueda en pantallas pequeñas */
+@media (max-width: 992px) {
+    .search-form {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+
+  .navbar-toggler {
+    margin-left: 15px; /* Ajusta este valor según sea necesario */
+}
+
+
+/************************************************************************************
+ Ajuste general para que el footer esté al final de la página */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    color: #333;
+    body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Contenido principal */
+.container {
+    flex: 1;
+}
+
+
+/************************************************************************************
+ Estilos del Main */
+
+main{
+    padding: 100px
+}
+
+main .social-icons {
+    display:flex;
+    justify-content: center;
+    margin-top: 40px;
+    list-style: none;
+}
+
+main .social-icons li{
+    margin-left: 8px; 
+}
+
+
+main .social-icons .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius:5px;
+    width: 100%;
+    height: 100%;
+}
+
+main .social-icons #linkedin{
+    background:#0077b0;
+}
+
+main .social-icons #github{
+    background:#23272d;
+}
+
+main .social-icons #twitter{
+    background:#1da1f2;
+}
+
+main .social-icons #Youtube{
+    background:#f70000;
+}
+
+main .social-icons #Platzi{
+    background:#121f3d;
+}
+
+/* Estilos del main*/
+
+/***************************************************************************
+ Footer */
+footer {
+    
+    color: #FFFFFF;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+}
+footer .list-inline-item a {
+    color: #62DAD3;
+    text-decoration: none;
+}
+footer .list-inline-item a:hover {
+    text-decoration: underline;
+}
+
+/*****************************************************************************************
+projects */
+#proj .tittle{
+    color: #231212;
+    margin: 40px 0px 0px 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#proj .row{
+    margin: 0px 60px 0px 60px;
+    
+}
+/*
+.detalles{
+    display: none;   
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: absolute; 
+    top: 10%;
+    left: 10%; 
+    z-index: 1;
+    width: 70%;  
+  }
+
+*/
+
+/***************************************************
+projects detalles*/
+
+/* Estilo común para el contenedor de detalles */
+.detalles {
+    display: none; /* Oculto por defecto */
+    z-index: 1000;
+    overflow-y: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+/* Estilo para pantallas pequeñas: ocupa toda la pantalla */
+@media (max-width: 767px) {
+    .detalles {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        padding: 20px; /* Espacio para legibilidad */
+    }
+}
+
+/* Estilo para pantallas grandes: centrado en la ventana */
+@media (min-width: 768px) {
+    .detalles {
+        position: absolute;
+    }
+}
+
+
+/***************************************************************************
+banner*/
+
+
+/* Ajustes para el hero     /*/
+#hero {
+    height: 45%;
+    position: relative;
+    /*overflow: hidden;*/
+  }
+/*
+#hero #computadora {
+    display: block; 
+    width: 100%;
+}
+
+*/
+
+
+#hero #computadora {
+    width: 100%; 
+    height: 100%; 
+  }
+
+#hero #computadora img {
+    
+    height: auto; /* Asegura que la imagen mantenga su relación de aspecto */
+}
+
+#hero #computadora img {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+/************************************************************
+Estilos para la posición y padding de la sección  banner */
+
+/*
+
+#hero .informacion-container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: flex;
+    width: 100%;
+    color: #f2f4f6;
+  
+    padding: 0 5%; 
+    text-shadow: -0.8px -0.8px 0.8px #333, 0.8px -0.8px 0.8px #333, -0.8px 0.8px 0.8px #333, 0.8px 0.8px 0.8px #333;
+}
+
+*/
+
+#hero .informacion-container{
+    top: 50%;
+    color: #f2f4f6;
+    transform: translateY(-50%);
+    padding: 0%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-shadow: -0.8px -0.8px 0.8px #333, 0.8px -0.8px 0.8px #333, -0.8px 0.8px 0.8px #333, 0.8px 0.8px 0.8px #333;
+}
+
+#hero .informacion-container .informacion {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    align-items: flex-start; /* Alinea todo el contenido a la izquierda */
+    margin-left: 40px;
+    font-weight: bold;
+    flex: 1; /* Permite que la sección de información ocupe el espacio restante */
+    max-width: 75%;
+    margin-top: 0%;
+  
+}
+
+.informacion {
+    margin-top: 0px;
+}
+.informacion h1{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Se ajusta al ancho del contenedor de Bootstrap */
+    max-width: 200px; /* Controla el tamaño máximo del contenedor en pantallas grandes */
+    margin-left: 1%; /* Equivale a Bootstrap's ms-2 */
+}
+
+#foto img {
+    width: 60%; /* La imagen ocupa el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+     /*object-fit: cover; Ajusta la imagen dentro del espacio */
+}
+/*
+
+*/
+#hero .informacion-container .informacion span{
+   font-size: small;
+    display: flex;
+    margin-bottom: 4%;
+    color: #b8c4e6;
+    text-shadow: -0.1px -0.1px 0.1px #9b9a9a, 0.1px -0.1px 0.1px #333, -0.1px 0.1px 0.1px #333, 0.1px 0.1px 0.1px #333;
+}
+
+#hero .text-muted {
+   
+      color: #b8c4e6 !important;
+    }
+/* *****************************************************************************************************************************
+skills */
+    
+  
+
+#skills .card-body:hover ul {
+    display: block; /* Muestra la lista al pasar el mouse */
+}
+#skills .card-body:hover p {
+    display: block; /* Muestra la lista al pasar el mouse */
+}
+#skills .card-body p {
+    display: none; /* Oculta la lista por defecto */
+}
+
+#skills .card-body ul {
+    display: none; /* Oculta la lista por defecto */
+}
+
+#skills .row {
+    margin-left: 0;  /* Elimina el margen izquierdo del row */
+    margin-right: 0; /* Elimina el margen derecho del row */
+}
+
+/* ************************************************************************
+projects svg
+*/
+
+#proj .card-img-top {
+    display: flex;
+    justify-content: center; /* Centra el SVG horizontalmente */
+    align-items: center; /* Centra el SVG verticalmente */
+    background-color: #f2f4f6; /* Color de fondo del SVG */
+    padding: 5%; /* Espacio entre el SVG y el texto */
+    border-radius: 8px; /* Establece un radio de borde redondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega un sombreado al SVG */
+    transition: transform 0.3s ease; /* Agrega una animación de transición al SVG */
+    height: 60%; /* Asigna el 50% de la altura total del card */
+   
+    object-fit: cover;
+    /*    object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+
+  }
+
+
+  #proj .card a{
+    height: 60%;
+    padding: 0;
+    margin: 0%;
+   
+
+  }
+ 
+  #proj  svg {
+   height: 100%; /*Ajusta el ancho del SVG al 100% del contenedor*/ 
+    }
+ /* 
+#proj  svg {
+     /* width: 70%; Ajusta el ancho del SVG al 100% del contenedor 
+    height: auto; /* Mantiene la proporción del SVG 
+  }
+    */
+  
+  #proj .card-body {
+    background-color: #f2f3f6;
+    
+}
+
+/* **********************************************************************/
+/* Asegúrate de que el texto sea legible en móviles */
+@media (max-width: 1024px) {
+  
+    
+#hero .informacion-container .informacion {
+    display:flex; 
+    text-align: start;
+    
+}
+#hero    .informacion h1 {
+        font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+    }
+
+#hero    .informacion p {
+        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+        text-align: start;
+        margin-left: 0%;    }
+}
+
+
+
+/*******************************************************************
+ Asegúrate de que el texto sea legible en móviles *****************/
+
+ @media (max-width: 576px) {
+  
+    #foto {
+        width: 20%; /* Se ajusta al ancho del contenedor de Bootstrap */
+        max-width: 200px; /* Controla el tamaño máximo del contenedor en pantallas grandes */
+        margin-left: 1%; /* Equivale a Bootstrap's ms-2 */
+    }
+
+    #foto img {
+    width: 100%; /* Asegúrate de que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del espacio */
+}
+#hero .informacion-container{
+
+    padding: 5%;
+
+}
+#hero .informacion-container .informacion {
+    display:flex; 
+    text-align: start;
+    
+}
+#hero    .informacion h1 {
+        font-size: 1rem; /* Tamaño de fuente más pequeño */
+    }
+
+#hero    .informacion p {
+        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+        text-align: start;
+        margin-left: 0%;    }
+}

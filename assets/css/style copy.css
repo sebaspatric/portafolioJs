@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+
+/* Estilo General */
+body {
+    font-family: Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #051B54; /* color azul oscuro */
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* Sección "Sobre Mí" */
+#about {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#about h1 {
+    color: #051B54;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+#about h2 {
+    color: #051B54;
+    font-size: 1.75rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* Listas de Datos y Experiencia */
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
+
+#about ul li strong {
+    color: #333;
+}
+
+/* Enlaces */
+a {
+    color: #62DAD3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Imagen de Perfil */
+#about img {
+    margin-top: 20px;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Ajustes de Enlace Externo */
+#about p:last-child {
+    margin-top: 20px;
+}
