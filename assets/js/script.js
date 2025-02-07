@@ -166,3 +166,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     }, 3000);
   });
   
+
+  document.querySelectorAll('.cursor-pointer').forEach(element => {
+    element.addEventListener('click', () => {
+      alert('Funcionalidad "Ver más" aún no implementada.');
+    });
+  });
+  
